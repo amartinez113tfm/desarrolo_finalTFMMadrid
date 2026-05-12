@@ -232,5 +232,5 @@ def get_datos_parquetTotal(codigo_sel, pollutant_sel, fecha_inicio, fecha_fin):
 
 
 def get_todo():
-    df = pd.read_parquet('parquet_total\dataset_total_predNO2.parquet')
+    df = pd.read_parquet('parquet_total/dataset_total_predNO2.parquet')
     return df.sort_values("timestamp")
