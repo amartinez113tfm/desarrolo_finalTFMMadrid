@@ -237,5 +237,6 @@ def get_todo():
     # Une la carpeta base con tu archivo
     path = os.path.join(BASE_DIR, 'parquet_total', 'dataset_total_predNO2.parquet')
     df = pd.read_parquet(path)
+    
     #df = pd.read_parquet('parquet_total/dataset_total_predNO2.parquet')
     return df.sort_values("timestamp")
